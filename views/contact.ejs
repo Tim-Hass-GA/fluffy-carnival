@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NODE/EXPRESS JS...</title>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  </head>
+  <body>
+    <%- include partials/nav.ejs %>
+    <h1>Contact Us</h1>
+    <!-- <h2>Hello, <%= qs.name %></h2> -->
+    <p>Want to know more..?</p>
+    <form id='contact-form' class="" action="/contact" method="post">
+      <label for="who">Who would you like to contact?</label>
+      <input type="text" name="who" value="<%= qs.person %>">
+      <label for="department">Department</label>
+      <input type="text" name="department" value="<%= qs.department %>">
+      <label for="email">Your email</label>
+      <input type="text" name="email" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NODE/EXPRESS JS...</title>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  </head>
+  <body>
+    <%- include partials/nav.ejs %>
+    <h1>Welcome <%= data.name %>, contact Us</h1>
+    <p>Want to know more..?</p>
+    <p>Age: <%= data.age %></p>
+    <p>Job: <%= data.job %></p>
+    <% if(data.hobbies){ %>
+      <h2>Hobbies:</h2>
+      <ul>
+        <% data.hobbies.forEach(function(item){ %>
+          <li><%= item %></li>
+        <% }) %>
+      </ul>
+    <% } %>
+  </body>
+</html>

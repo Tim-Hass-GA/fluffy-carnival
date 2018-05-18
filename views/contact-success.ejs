@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NODE/EXPRESS JS...</title>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  </head>
+  <body>
+    <%- include partials/nav.ejs %>
+    <h1>Thanks for contacting us</h1>
+    <p>You send a message to <%= data.who %> in the  <%= data.department %> department.</p>
+    <p>We will be in touch with you at <%= data.email %>.</p>
+
+  </body>
+</html>
